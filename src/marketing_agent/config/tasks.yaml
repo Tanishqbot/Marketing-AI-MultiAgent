@@ -1,0 +1,61 @@
+industry_researcher_task:
+  description: >
+    Conduct a thorough analysis of the industry the company operates in. Identify the company’s key offerings and strategic focus areas. {topic}
+    Make sure you find any interesting and relevant information given on {topic}.
+
+  expected_output: >
+    A detailed report including:
+    the competitors' list and their annual reports could be fetched
+    Industry overview (e.g., Automotive, Manufacturing, Finance, Retail, Healthcare)
+    Company’s key offerings (products/services)
+    Strategic focus areas (e.g., operations, supply chain, customer experience)
+    Vision and product information
+  agent: industry_researcher
+
+trends_analyst_task:
+  description: >
+    Analyze current industry trends and standards related to AI, ML, and automation within {topic} sector.
+  expected_output: >
+    A comprehensive analysis report including:
+    Key industry trends in AI, ML, and automation
+    Industry standards and best practices
+    Potential impact of these trends on the company’s operations
+  agent: trends_analyst
+
+suggest_usecase_task:
+  description: >
+    Propose relevant use cases where {topic} can leverage GenAI, LLMs, and ML technologies to improve processes, enhance customer satisfaction, and boost operational efficiency.
+  expected_output: >
+    A document outlining:
+    Detailed use cases with descriptions
+    Potential benefits of each use case
+    Feasibility analysis for implementation
+  agent: suggest_usecase
+
+resource_collector_task:
+  description: >
+    Collect relevant datasets and resources from platforms like Kaggle, HuggingFace, and GitHub that can be used for the proposed use cases from the suggest usecase for {topic}.
+  expected_output: >
+    A text or markdown file containing:
+    Links/urls to relevant datasets and resources
+    Brief descriptions of each dataset/resource
+  agent: resource_collector
+
+genai_solutions_task:
+  description: >
+    Propose GenAI solutions such as document search, automated report generation, and AI-powered chat systems for internal or customer-facing purposes for {topic}.
+  expected_output: >
+    the competitors' list and their annual reports could be fetched to see what industry leaders are doing wrt AI adoption
+    A proposal document including:
+    Detailed descriptions of proposed GenAI solutions
+    Potential applications within the company
+    Benefits and expected outcomes
+    Implementation plan and required resources
+  agent: genai_solutions
+
+write_edit_task:
+  description: >
+    Proofread make changes in the given blog post for grammatical errors and alignment with the brand's voice for {topic}.
+  expected_output: >
+    A well-written blog post in markdown format, ready for publication, each section should be concise and specific."
+  agent: write_edit
